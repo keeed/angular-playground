@@ -1,6 +1,8 @@
 export class Room {
-    constructor(public id: number, public name: string, public capacity: number)
-    {
+    constructor(
+        public id: number,
+        public name: string,
+        public capacity: number) {
 
     }
 }

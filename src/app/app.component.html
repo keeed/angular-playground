@@ -1,23 +1,7 @@
 <h1>{{title}}</h1>
 
-<hr />
-<br />
+<a routerLink="/home">Home</a>
+&nbsp;
+<!-- <a routerLink="/create-room">Create Room</a> -->
 
-<span>Name:</span><input #roomName />
-<br />
-<span>Capacity:</span><input type="number" #roomCapacity />
-<br />
-<button (click)="addRoom(roomName.value, roomCapacity.value)">Add Room</button>
-<br />
-<button (click)="toggleDetailsVisibility()">Show / Hide Details</button>
-
-<hr />
-
-<div *ngIf="showDetails; else roomDetailsTemplate">
-    <app-room-list [rooms]="rooms"></app-room-list>
-</div>
-<ng-template #roomDetailsTemplate>
-    <div>
-        Room Details Hidden
-    </div>
-</ng-template>
+<router-outlet></router-outlet>
