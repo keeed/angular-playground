@@ -1,0 +1,13 @@
+<h1>Room Details</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th i18n>Name</th>
+        <th>Capacity</th>
+    </tr>
+    <tr *ngFor='let room of rooms'>
+        <td>{{room.id}}</td>
+        <td>{{room.name}}</td>
+        <td>{{room.capacity}}</td>
+    </tr>
+</table>
